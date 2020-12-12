@@ -1,0 +1,15 @@
+[
+  {
+    "outputFileName": "wwwroot/admin/paymentrazorpay.min.js",
+    "inputFiles": [
+      "wwwroot/admin/paymentRazorpay.module.js",
+      "wwwroot/admin/razorpay/razorpay-service.js",
+      "wwwroot/admin/razorpay/razorpay-config-form.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+]

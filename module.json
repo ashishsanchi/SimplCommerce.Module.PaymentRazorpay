@@ -1,0 +1,6 @@
+{
+  "id": "SimplCommerce.Module.PaymentRazorpay",
+  "name": "Razorpay Payment",
+  "isBundledWithHost": true,
+  "version": "1.0.0"
+}

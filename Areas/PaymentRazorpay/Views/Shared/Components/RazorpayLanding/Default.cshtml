@@ -1,0 +1,25 @@
+﻿@model SimplCommerce.Module.PaymentRazorpay.Areas.PaymentRazorpay.ViewModels.RazorpayCheckoutForm
+<label>Razor Pay</label>
+@*<form asp-area="PaymentCoD" asp-controller="CoD" asp-action="CoDCheckout" method="POST" id="checkout-payment" class="form-horizontal">*@
+@*<div class="form-group">
+    <div class="col-md-12">
+        <button type="submit" class="btn btn-order" onclick="launchBOLT();">@Localizer["Razorpay"]</button>
+    </div>
+</div>*@
+@*</form>*@
+
+<form asp-area="PaymentRazorpay" asp-action="RazorpayCheckout" asp-controller="Razorpay" method="POST"> 
+
+<script src="https://checkout.razorpay.com/v1/checkout.js" 
+        data-key="@Model.Key" 
+        data-amount="@Model.OrderAmount" 
+        data-currency="INR" 
+        data-order_id="@Model.OrderId" 
+        data-buttontext="Pay with Razorpay"
+        data-name="KiranaBabu" 
+        data-description="Kiranababu Order Payment"
+        data-image="https://www.kiranababu.com/themes/KiranaBabu/assets/img/logo/logo.png" 
+        data-prefill.name="@Model.CustomerName" 
+        data-prefill.email="@Model.CustomerEmail" 
+        data-prefill.contact="@Model.CustomerPhone" data-theme.color="#546699"></script>
+    <input type="hidden" custom="Hidden Element" name="hidden"></form>
